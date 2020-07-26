@@ -3,7 +3,7 @@ We need to write a function MatrixChainOrder() that should return the minimum nu
 
 import java.util.*;
 
-class Solution {
+class matrixChainMultiplication {
 
     public static int[][] ans;
     public static int matrixChainMultiplication (int[] arr, int i, int j){
