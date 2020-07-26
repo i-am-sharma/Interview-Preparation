@@ -3,10 +3,10 @@ We need to write a function MatrixChainOrder() that should return the minimum nu
 
 import java.util.*;
 
-class matrixChainMultiplication {
+public class matrixChainMultiplication {
 
     public static int[][] ans;
-    public static int matrixChainMultiplication (int[] arr, int i, int j){
+    public static int mtxChainMultiplication (int[] arr, int i, int j){
         // Base Condition
         if (i >= j) return 0;
 
@@ -14,7 +14,7 @@ class matrixChainMultiplication {
 
         int min = Integer.MAX_VALUE;
         for (int k=i; k<=j-1; k++){
-            int num = matrixChainMultiplication (arr, i, k) + matrixChainMultiplication (arr, k+1, j) + (arr[i-1] * arr[k] * arr[j]);
+            int num = mtxChainMultiplication (arr, i, k) + mtxChainMultiplication (arr, k+1, j) + (arr[i-1] * arr[k] * arr[j]);
             if (num < min) min = num;
         }
         return ans[i][j] = min;
@@ -47,7 +47,7 @@ class matrixChainMultiplication {
 
             int start = 1;
             int end = N-1;
-            System.out.println (matrixChainMultiplication(arr, start, end));
+            System.out.println (mtxChainMultiplication(arr, start, end));
 
         }
 
