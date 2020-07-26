@@ -12,7 +12,7 @@ public class maximumProductSubarray {
         int minVal = arr[0];
         int globalMax = arr[0];
 
-        for (int i=0; i<N; i++){
+        for (int i=1; i<N; i++){
             //swap min/max if value is negative
             if(arr[i] < 0){
                 int temp = maxVal;
