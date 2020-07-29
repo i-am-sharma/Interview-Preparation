@@ -1,6 +1,7 @@
-/* Given an array that contains both positive and negative integers, find the product of the maximum product subarray. 
+/* Problem Statement - Given an array that contains both positive and negative integers, find the product of the maximum product subarray. 
 Expected Time complexity is O(n) and only O(1) extra space can be used. */
 
+// Code by @shivshar
 import java.util.*;
 
 public class maximumProductSubarray {
@@ -44,5 +45,4 @@ public class maximumProductSubarray {
         }
         sc.close();
     }
-
 } 
