@@ -8,13 +8,14 @@ public class longestIncreasingSubsequence {
     
     public static int LIS (int[] arr, int N){
         // DP approach
-        int max = Integer.MIN_VALUE;
         int dp[] = new int [N];
 
         // Initializing DP array by default value:
         for (int i=0; i<N; i++){
             dp[i] = 1;
         }
+        
+        int max = dp[0];
 
         for (int j=1; j<N; j++){
             for (int i=0; i<j; i++){
