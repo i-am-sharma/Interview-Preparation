@@ -1,8 +1,9 @@
+/* Problem Statement- Given two strings ‘X’ and ‘Y’, find the length of the longest common substring. */
 
 // Code by @shivshar
 import java.util.*;
 public class longestCommonSubstring {
-    // Recurive approach
+    // Recurive Naive approach
     public static int Recurive_LCS (String s1, String s2, int n, int m, int count){
         if (n == 0 || m == 0) return count;
 
@@ -11,7 +12,7 @@ public class longestCommonSubstring {
         }
         return Math.max (count, Math.max(Recurive_LCS(s1, s2, n-1, m, 0), Recurive_LCS(s1, s2, n, m-1, 0)));
     }
-    // Tabular approach
+    // Tabular DP approach
     public static int LCS (String s1, String s2, int n, int m){
         int[][] dp = new int [n+1][m+1];
         for (int i=0; i<=m; i++){
@@ -53,3 +54,7 @@ public class longestCommonSubstring {
         sc.close();
     }
 }
+
+// Time Complexity for Recursive Naive approach: O(2^n)
+// Time Complexity for Iterative DP approach: O(NM)
+// Space Complexity for Iterative DP approach: O(NM)
