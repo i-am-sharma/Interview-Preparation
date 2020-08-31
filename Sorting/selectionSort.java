@@ -1,5 +1,6 @@
 package Sorting;
 import java.util.*;
+
 public class selectionSort {
     public static int[] sorting (int[] arr, int n){
         // 1. First find the min element  index
@@ -33,3 +34,4 @@ public class selectionSort {
 }
 
 // Time Complexity = O(n^2)
+// Space Complexity - O(1)
