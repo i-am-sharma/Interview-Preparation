@@ -5,11 +5,11 @@ import java.util.*;
 public class reverseInteger {
 
     public static int reverse (int input){
+        
+        if (input == 0) return 0;
         int res;
         String s = "";
-        if (input == 0) return 0;
-
-        else if (input < 0){
+        if (input < 0){
             input = -1 * input;
             while (input > 0){
                 s = s + String.valueOf(input % 10);
@@ -41,6 +41,6 @@ public class reverseInteger {
     }
 }
 
-// Time Complexity - log(x)
+// Time Complexity - O(x)
 // Space complexity - O(1)
 
