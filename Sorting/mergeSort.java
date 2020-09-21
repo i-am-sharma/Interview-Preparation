@@ -1,6 +1,7 @@
 package Sorting;
 import java.util.*;
 
+// Code by @shivshar
 public class mergeSort {
 
 public static void merge(int[] arr, int[] left, int l_size, int[] right, int r_size){
