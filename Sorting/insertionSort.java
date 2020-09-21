@@ -1,6 +1,7 @@
 package Sorting;
 import java.util.*;
 
+// Code by @shivshar
 public class insertionSort {
 
     public static int[] sorting (int[] arr, int n){
