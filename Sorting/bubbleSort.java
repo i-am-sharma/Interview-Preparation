@@ -1,6 +1,7 @@
 package Sorting;
 import java.util.*;
 
+// Code by @shivshar
 public class bubbleSort {
     public static int[] sorting (int[] arr, int n){
         // Two key point in bubble sort -
