@@ -69,3 +69,7 @@ class Pair<U, V> {
 		printBottom (root);
 	}
 }
+
+// Time Complexity : O(n)
+// what if we want the output in order (left -> right) ?
+// then we need to use TreeMap instead of Hashmap. TreeMap sorts the key when added - O(nlogn) time complexity
